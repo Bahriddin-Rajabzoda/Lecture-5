@@ -6,6 +6,7 @@
 # 2. What is method ?
 # 3. Methods of Array
 # 4. Mechanics in JS
+# 5. Callbacks method
 
 ## In JavaScript, an array is a special type of object used to store multiple values in a single variable. 
 
@@ -114,6 +115,36 @@
     console.log(sum(1, 2, 3)); // 6
     console.log(sum(4, 5, 6, 7)); // 22
 ---
+---
+
+## In JavaScript, a callback is a function that is passed as an argument to another function and is executed after the completion of that function. This technique allows for more flexible and modular code, especially when dealing with asynchronous operations like network requests or file.
+### In JS we have 6 callback method:
+1. forEach( ) - method in JavaScript is used to execute a provided function once for each array element. It’s a convenient way to iterate over arrays without using a traditional for loop.
+2. map( ) - method in JavaScript is used to create a new array by applying a provided function to each element of the original array. It’s a powerful tool for transforming data in arrays.
+3. find( ) - method in JavaScript is used to locate the first element in an array that satisfies a provided testing function. If no elements satisfy the testing function, it returns undefined.
+4. filter( ) - method in JavaScript is used to create a new array with all elements that pass a test implemented by a provided function. It’s a powerful tool for selecting elements from an array based on specific criteria.
+5. reduce( ) - method in JavaScript is used to reduce an array to a single value by executing a provided function for each element of the array (from left to right). The result of each function call is stored in an accumulator, which is ultimately returned as the final result.
+6. toSorted( ) - method is a relatively new addition to JavaScript, introduced in ECMAScript 2023. It creates a new array with the elements sorted in ascending order by default, without modifying the original array. This is particularly useful when you want to sort an array but keep the original array unchanged.
+---
+
+Syntax of callbacks method:
+
+    1.  array.forEach(function(currentValue, index, array) {
+    }, thisArg);
+---
+    2. let newArray = array.map(function(currentValue, index, array) {
+    }, thisArg);
+---
+    3. let foundElement = array.find(function(element, index, array) {
+    }, thisArg);
+---
+    4. let newArray = array.filter(function(element, index, array) {
+    }, thisArg);
+---
+    5. let result = array.reduce(function(accumulator, currentValue, index, array) {
+    }, initialValue);
+---
+    6. let sortedArray = array.toSorted(compareFunction);
 ---
 
 ![end](https://i.pinimg.com/originals/59/63/57/59635742174a5cb7d5583911b70cab31.gif)
